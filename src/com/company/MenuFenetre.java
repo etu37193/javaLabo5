@@ -20,8 +20,6 @@ public class MenuFenetre extends JFrame{
     public MenuFenetre(){
         super("IESN");
         setBounds(100,100,1000,500);
-        setVisible(true);
-
         menuBar = new JMenuBar();
         setJMenuBar(menuBar);
 
@@ -51,7 +49,7 @@ public class MenuFenetre extends JFrame{
         aide.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));
         infoMenu.add(aide);
 
-
+        setVisible(true);
     }
 
     private class ExitListener implements ActionListener{
